@@ -11,27 +11,24 @@ export default function Login({navigation}){
             width:250,
             height:250,
             borderRadius:20,
-            marginBottom:50, 
-            transform:[{rotate:"45deg"}]
+            marginBottom:10, 
         }}
          source ={{
-             uri:"https://media.gettyimages.com/photos/back-to-school-flat-lay-picture-id1174991144?k=20&m=1174991144&s=612x612&w=0&h=z61iuBsPp89HCj-aCsdOg9nuBxT7SK6bHC_E7pyz9gA="
+             uri:"https://media.gettyimages.com/photos/beautiful-woman-standing-in-front-of-blue-background-with-smart-phone-picture-id1268184706?k=20&m=1268184706&s=612x612&w=0&h=flglc0pirXRGe-YF-qwdAbylTePorGHX2rP0m9RgR08="
             }}
             />
      
-                
-                <Text style={{color:"rgba(0,0,0,0.8)",fontSize:24,}}>Welcome! To </Text>
-                <Text style={{color:'black',fontSize:25,fontWeight:"800"}}>Prilla's Tech</Text>
-                <TouchableOpacity style={{
+               
+                <Text style={{
                     backgroundColor:'#e3e3e3',
                     padding:10, 
                     borderRadius:10,
                     flexDirection:"row",
                     paddingHorizontal:60, 
                     marginTop:20}}>
-                        <AntDesign name="google" size={24} color="orange" />
-                    <Text style={{fontSize:17,marginLeft:10}}>Login in with Gmail</Text>
-                 </TouchableOpacity>
+                       
+                    <Text style={{fontSize:17,marginLeft:10}}>Get Access into your Account </Text>
+                 </Text>
                  <TouchableOpacity 
                  style={{
                  backgroundColor:"black",
@@ -42,8 +39,10 @@ export default function Login({navigation}){
                     marginTop:20
                     }}
                    >
+                        
                          <AntDesign name="apple1" size={24} color="white" />
-                  <Text style={{fontSize:17, color:"white",marginLeft:10}}>Login in with Apple</Text>
+                  <Text style={{fontSize:17, color:"white",marginLeft:10, paddingRight:10,}}>Login in</Text>
+                  <AntDesign name="google" size={24} color="white" />
 
                  </TouchableOpacity>
                  <TouchableOpacity>
