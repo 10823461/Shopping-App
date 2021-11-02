@@ -15,7 +15,7 @@ export default function Login({navigation}){
             transform:[{rotate:"45deg"}]
         }}
          source ={{
-             uri:"https://media.gettyimages.com/photos/beautiful-woman-standing-in-front-of-blue-background-with-smart-phone-picture-id1268184706?k=20&m=1268184706&s=612x612&w=0&h=flglc0pirXRGe-YF-qwdAbylTePorGHX2rP0m9RgR08="
+             uri:"https://media.gettyimages.com/photos/back-to-school-flat-lay-picture-id1174991144?k=20&m=1174991144&s=612x612&w=0&h=z61iuBsPp89HCj-aCsdOg9nuBxT7SK6bHC_E7pyz9gA="
             }}
             />
      

@@ -1,51 +1,69 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, Text, View,Image } from 'react-native';
+import { StyleSheet, Text, View,Image, ImageBackground } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Login from './Login';
+import Laptop from '../assets/Laptop.png';
 
-export default function Welcome({ navigation }){
+
+//const Welcome = props => {
+    export default function Welcome({ navigation }){
     return (
-        <View style={{flex:1,backgroundColor:"black",alignItems:"center", justifyContent:"center"}}>
-            <Image
-            style={{
-                width:300,
-                height:200,
-                borderRadius:10,
-                marginBottom:20, 
-            }}
-             source ={{
-                 uri:"https://media.gettyimages.com/photos/office-workplace-computer-with-white-blank-empty-screen-picture-id1184812329?k=20&m=1184812329&s=612x612&w=0&h=kQEo7bgzh10cJWRtphJiekQUycsOk7cSH9pd3ocvRsA="
-             }}
-                 />
-                <Text style={{color:"white",fontSize:24,}}>Your Skills </Text>
-                <Text style={{color:"white",fontSize:25,fontWeight:"800"}}>Our Priority</Text>
-                <TouchableOpacity style={{
-                    backgroundColor:'#e3e3e3',
-                    padding:10, 
-                    borderRadius:10,
-                    paddingHorizontal:60, 
-                    marginTop:20}}>
-                    <Text style={{fontSize:17}}>Improve your skills with best tools from us</Text>
-                 </TouchableOpacity>
-                 <TouchableOpacity style={{
-                 backgroundColor:"white",
-                    padding:10, 
-                    borderRadius:10,
-                    paddingHorizontal:60, 
-                    marginTop:20}}>
+        <ImageBackground
+        style = {styles.img}
+        source = {Laptop}
+        //source ={{uri: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60=" }
+        >
+    
+    </ImageBackground>
+    )
+    }
 
-                    <TouchableOpacity
-                    onPress={()=>{
-                        navigation.navigate("Login")
-                    }}
-                      >
-                    <Text style={{fontSize:17, fontWeight:"500",  color:"black"}}>Get Started</Text>
+const styles = StyleSheet.create({
+    img: {
+        flex: 1
+    }
+})
+// export default function Welcome({ navigation }){
+//     return (
+//         <View>
+//             <ImageBackground source={image}>
+//                  <Text>I am the inside man</Text>
+//              </ImageBackground>
+//         </View>
+        
+        // <View style={{flex:1,alignItems:"center", justifyContent:"center"}}>
+        //     <ImageBackground source={image}>
+        //         <Text>I am the inside man</Text>
+        //     </ImageBackground>
+        //         <Text style={{color:"white",fontSize:24,}}>Your Skills </Text>
+        //         <Text style={{color:"white",fontSize:25,fontWeight:"800"}}>Our Priority</Text>
+        //         <TouchableOpacity style={{
+        //             backgroundColor:'#e3e3e3',
+        //             padding:10, 
+        //             borderRadius:10,
+        //             paddingHorizontal:60, 
+        //             marginTop:20}}>
+        //             <Text style={{fontSize:17}}>Improve your skills with best tools from us</Text>
+        //          </TouchableOpacity>
+        //          <TouchableOpacity style={{
+        //          backgroundColor:"white",
+        //             padding:10, 
+        //             borderRadius:10,
+        //             paddingHorizontal:60, 
+        //             marginTop:20}}>
 
-                 </TouchableOpacity>
-                 </TouchableOpacity>
+        //             <TouchableOpacity
+        //             onPress={()=>{
+        //                 navigation.navigate("Login")
+        //             }}
+        //               >
+        //             <Text style={{fontSize:17, fontWeight:"500",  color:"black"}}>Get Started</Text>
 
-                     </View>
-                 );
-                }
+        //          </TouchableOpacity>
+        //          </TouchableOpacity>
 
+        //              </View>
+                // );
+              
+               // }

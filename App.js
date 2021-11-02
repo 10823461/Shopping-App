@@ -3,16 +3,19 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
-import Login from '../Screens/Login';
-import Home from '../Screens/Home';
+import Login from './Screens/Login';
+import Welcome from './Screens/Welcome';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
   return ( 
     
+   // <Welcome></Welcome>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Login">
+        <Stack.Navigator>
+        <Stack.Screen name="Welcome" component={Welcome} />
           <Stack.Screen name="Login" component={Login} />
+
         
         </Stack.Navigator>
       </NavigationContainer>
@@ -23,7 +26,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    //flex: 1,
     flexDirection: "row",
     backgroundColor: '#fff',
     alignItems: 'center',
