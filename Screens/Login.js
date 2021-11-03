@@ -5,7 +5,7 @@ import {AntDesign} from '@expo/vector-icons'
 
 export default function Login({navigation}){
     return (
-        <View style={{flex:1,backgroundColor:'#E6FFFF',alignItems:"center", justifyContent:"center"}}>
+        <View style={{flex:1,backgroundColor:'#004D4D',alignItems:"center", justifyContent:"center"}}>
         <Image
         style={{
             width:250,
@@ -35,14 +35,16 @@ export default function Login({navigation}){
                  flexDirection:"row",
                     padding:10, 
                     borderRadius:10,
-                    paddingHorizontal:60, 
+                    paddingHorizontal:40, 
                     marginTop:20
                     }}
                    >
+                       onPress={()=>{
+                     navigation.navigate("LoginDetails")}}
                         
-                         <AntDesign name="apple1" size={24} color="white" />
-                  <Text style={{fontSize:17, color:"white",marginLeft:10, paddingRight:10,}}>Login in</Text>
-                  <AntDesign name="google" size={24} color="white" />
+                         <AntDesign name="apple1" size={24} color="white"/>
+                  <Text style={{fontSize:17, color:"white",paddingLeft:5}}>Login in</Text>
+                  <AntDesign name="google" size={24} color="white" paddingLeft="20" />
 
                  </TouchableOpacity>
                  <TouchableOpacity>

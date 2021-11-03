@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 import Login from './Screens/Login';
 import Welcome from './Screens/Welcome';
+import LoginDetails from './Screens/LoginDetails';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -13,9 +14,12 @@ export default function App() {
    
       <NavigationContainer>  
        <Stack.Navigator
-          screenOptions={{headerShown:true}}>
+          screenOptions={{headerShown:false}}>
           <Stack.Screen name="Welcome" component={Welcome } />
           <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="LoginDetails" component={LoginDetails } />
+
+          
         </Stack.Navigator>
         <StatusBar style="auto"/>
       </NavigationContainer>
@@ -23,6 +27,7 @@ export default function App() {
 
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
