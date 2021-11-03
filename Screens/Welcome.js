@@ -21,15 +21,15 @@ import Laptop from '../assets/Laptop.png';
         
             <View style={{flex:1,alignItems:"center", justifyContent:"center"}}>
             
-            <Text style={{color:"white",fontSize:24,}}>Your Skills </Text>
-          <Text style={{color:"white",fontSize:25,fontWeight:"800"}}>Our Priority</Text>
+            <Text style={{color:"orange",fontSize:50,fontWeight:"800",}}>Prilla's <Text style={{color:"#004D4D",fontSize:50,fontWeight:"800",}}>Shoppify</Text></Text>
+       
            <TouchableOpacity style={{
                 backgroundColor:'#e3e3e3',
                 padding:10, 
                 borderRadius:10,
                 paddingHorizontal:60, 
                marginTop:20}}>
-                <Text style={{fontSize:17}}>Improve your skills with best tools from us</Text>
+                <Text style={{fontSize:17,}}>Improve your skills with best tools from us</Text>
              </TouchableOpacity>
              <TouchableOpacity style={{
              backgroundColor:"white",
@@ -59,6 +59,9 @@ import Laptop from '../assets/Laptop.png';
 
 const styles = StyleSheet.create({
    img:{flex:1}
+
+  
+  
 });
 
 

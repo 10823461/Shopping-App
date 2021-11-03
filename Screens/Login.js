@@ -5,7 +5,7 @@ import {AntDesign} from '@expo/vector-icons'
 
 export default function Login({navigation}){
     return (
-        <View style={{flex:1,backgroundColor:"white",alignItems:"center", justifyContent:"center"}}>
+        <View style={{flex:1,backgroundColor:'#E6FFFF',alignItems:"center", justifyContent:"center"}}>
         <Image
         style={{
             width:250,
