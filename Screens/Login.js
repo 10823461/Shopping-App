@@ -39,14 +39,17 @@ export default function Login({navigation}){
                     marginTop:20
                     }}
                    >
+                       
                        onPress={()=>{
                      navigation.navigate("LoginDetails")}}
                         
-                         <AntDesign name="apple1" size={24} color="white"/>
-                  <Text style={{fontSize:17, color:"white",paddingLeft:5}}>Login in</Text>
-                  <AntDesign name="google" size={24} color="white" paddingLeft="20" />
+                         <AntDesign name="apple1" size={24} color="white" justifyContent="center"/>
+                  <Text style={{fontSize:17, color:"white",justifyContent:"center"}}>Login in</Text>
+                  <AntDesign name="google" size={24} color="white" justifyContent="center" />
 
+              
                  </TouchableOpacity>
+                 
                  <TouchableOpacity>
                  <Text style={{marginTop:10,fontWeight:"500",color:"grey"}}>Don't have an account?<Text style={{color:"orange",fontWeight:'bold'}}> Sign up</Text></Text>
                </TouchableOpacity>

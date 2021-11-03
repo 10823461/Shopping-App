@@ -21,7 +21,7 @@ import Laptop from '../assets/Laptop.png';
         
             <View style={{flex:1,alignItems:"center", justifyContent:"center"}}>
             
-            <Text style={{color:"orange",fontSize:50,fontWeight:"800",}}>Prilla's <Text style={{color:"#004D4D",fontSize:50,fontWeight:"800",}}>Shoppify</Text></Text>
+            <Text style={{color:"orange",fontSize:50,fontWeight:"800",paddingRight:20}}>Prilla's <Text style={{color:"#004D4D",fontSize:50,fontWeight:"800",paddingRight:40,}}>Shoppify</Text></Text>
        
            <TouchableOpacity style={{
                 backgroundColor:'#e3e3e3',
