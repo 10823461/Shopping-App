@@ -39,15 +39,18 @@ export default function Login({navigation}){
                     marginTop:20
                     }}
                    >
+                       <TouchableOpacity
                        
                        onPress={()=>{
                      navigation.navigate("LoginDetails")}}
+                     >
                         
                          <AntDesign name="apple1" size={24} color="white" justifyContent="center"/>
                   <Text style={{fontSize:17, color:"white",justifyContent:"center"}}>Login in</Text>
                   <AntDesign name="google" size={24} color="white" justifyContent="center" />
 
               
+                 </TouchableOpacity>
                  </TouchableOpacity>
                  
                  <TouchableOpacity>

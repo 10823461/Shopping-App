@@ -6,18 +6,22 @@ import {NavigationContainer} from '@react-navigation/native';
 import Login from './Screens/Login';
 import Welcome from './Screens/Welcome';
 import LoginDetails from './Screens/LoginDetails';
+import * as Font from 'expo-font';
+import {AppLoading} from 'expo';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
+ 
   return ( 
     
    
       <NavigationContainer>  
        <Stack.Navigator
           screenOptions={{headerShown:false}}>
-             <Stack.Screen name="LoginDetails" component={LoginDetails } />
+           
           <Stack.Screen name="Welcome" component={Welcome } />
           <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="LoginDetails" component={LoginDetails } />
          
 
           
