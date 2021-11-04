@@ -29,29 +29,28 @@ export default function Login({navigation}){
                        
                     <Text style={{fontSize:17,marginLeft:10}}>Get Access into your Account </Text>
                  </Text>
-                 <TouchableOpacity 
-                 style={{
-                 backgroundColor:"black",
-                 flexDirection:"row",
-                    padding:10, 
-                    borderRadius:10,
-                    paddingHorizontal:40, 
-                    marginTop:20
-                    }}
-                   >
-                       <TouchableOpacity
+                
+                 <TouchableOpacity
+                 style={{flexDirection:'row',
+                margin:10, backgroundColor:'black', paddingHorizontal:60,
+                padding:10, 
+                borderRadius:10,
+                paddingBottom:10,
+            }}
                        
                        onPress={()=>{
                      navigation.navigate("LoginDetails")}}
                      >
                         
-                         <AntDesign name="apple1" size={24} color="white" justifyContent="center"/>
-                  <Text style={{fontSize:17, color:"white",justifyContent:"center"}}>Login in</Text>
-                  <AntDesign name="google" size={24} color="white" justifyContent="center" />
+                 <AntDesign name="apple1" size={24} color="white"style={{ paddingRight:10}}/><Text style={{fontSize:17, color:"white",}}>Login in</Text>
+                 <AntDesign name="google" size={24} color="white" style={{paddingLeft:10}}/>
+                  
+
+                  
 
               
                  </TouchableOpacity>
-                 </TouchableOpacity>
+                 
                  
                  <TouchableOpacity>
                  <Text style={{marginTop:10,fontWeight:"500",color:"grey"}}>Don't have an account?<Text style={{color:"orange",fontWeight:'bold'}}> Sign up</Text></Text>
