@@ -1,6 +1,8 @@
-import React from 'react';
-import { Text, View, Image, TextInput, } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
+import React,{useState} from 'react';
+import { Text,Icon, View, Image, TextInput, } from 'react-native';
+import { AntDesign, MaterialIcons } from '@expo/vector-icons';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+
 
 
 function TextInputComponent(props) {
@@ -26,7 +28,7 @@ function TextInputComponent(props) {
                     }}
 
                 ></TextInput>
-
+ {props?.icon2 && props?.icon2}
             </View>
         </View>
 
@@ -34,6 +36,7 @@ function TextInputComponent(props) {
 }
 
 export default function LoginDetails({ navigation }) {
+    const [hidePass, setHidePass] = useState(true);
     return (
         <View style={{ backgroundColor: "grey", height: "100%" }}>
 
@@ -47,12 +50,41 @@ export default function LoginDetails({ navigation }) {
               
             }}
             >My Account</Text>
-            <View style={{paddingHorizontal: 10}}>
-                <TextInputComponent label="Email" icon={<AntDesign name="mail" color="#00716F" size={24} />} />
-                <TextInputComponent label="Password" icon={<AntDesign name="lock" color="#00716F" size={24} />} />
+            <View style={{paddingHorizontal: 10, fontWeight:'bold'}}>
+                <TextInputComponent label="Email Address" icon={<AntDesign name="mail" color="#00716F" size={24} />} />
+                <TextInputComponent label="Password" icon={<AntDesign name="lock" color="#00716F" size={24} />} /> 
             </View>
+            <Text style={{
+                    marginTop:10,
+                    marginLeft:20,
+                    fontWeight:'bold',
+                    color:"#00716F",
+                    marginBottom:30,
+                }}>Forgot Password?</Text>
 
-
+              
+               <View style={{justifyContent:'center', alignItems:'center', width:'100%'}}>
+                <TouchableOpacity 
+                style={{
+                    
+                   height:30,
+                   width:200,
+                    borderWidth: 1,
+                    backgroundColor: "#2a5e6e",
+                    borderRadius: 5,
+                    textAlign:'center',
+                   }}
+         >
+                    <Text style={{ justifyContent:'center',}}>
+                 
+                        Sign in
+                    </Text>
+                </TouchableOpacity>
+                </View>
+            
+           
+    
+   
         </View>
     )
 

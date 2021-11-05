@@ -24,7 +24,7 @@ export default function Login({navigation}){
                     padding:10, 
                     borderRadius:10,
                     flexDirection:"row",
-                    paddingHorizontal:60, 
+                    paddingHorizontal:40, 
                     marginTop:20}}>
                        
                     <Text style={{fontSize:17,marginLeft:10}}>Get Access into your Account </Text>

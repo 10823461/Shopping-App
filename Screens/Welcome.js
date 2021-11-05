@@ -27,9 +27,9 @@ import Laptop from '../assets/Laptop.png';
                 backgroundColor:'#e3e3e3',
                 padding:10, 
                 borderRadius:10,
-                paddingHorizontal:60, 
+                paddingHorizontal:40, 
                marginTop:20}}>
-                <Text style={{fontSize:17,}}>Improve your skills with best tools from us</Text>
+                <Text style={{fontSize:17,alignText:'center'}}>Because you're worth it</Text>
              </TouchableOpacity>
              <TouchableOpacity style={{
              backgroundColor:"white",
