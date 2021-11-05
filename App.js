@@ -6,6 +6,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import Login from './Screens/Login';
 import Welcome from './Screens/Welcome';
 import LoginDetails from './Screens/LoginDetails';
+import Home from './Screens/Home';
 import * as Font from 'expo-font';
 import {AppLoading} from 'expo';
 
@@ -18,9 +19,12 @@ export default function App() {
       <NavigationContainer>  
        <Stack.Navigator
           screenOptions={{headerShown:true}}>
+             <Stack.Screen name="Home" component={Home} />
+             <Stack.Screen name="Login" component={Login} />
              <Stack.Screen name="LoginDetails" component={LoginDetails } />
             <Stack.Screen name="Welcome" component={Welcome } />
-            <Stack.Screen name="Login" component={Login} />
+           
+           
           
      
           
