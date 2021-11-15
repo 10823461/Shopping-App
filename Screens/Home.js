@@ -1,64 +1,63 @@
-import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, Text, View,Image, ImageBackground } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import {View, Text, Image, StyleSheet, ScrollView} from 'react-native';
+import { Ionicons, AntDesign, Foundation } from '@expo/vector-icons';
+import Card from '../components/Card'
+import Tab from '../components/BottomTab'
+import Container from '../components/Container'
 
-import Laptop from '../assets/Laptop.png';
-
-
-//const Welcome = props => {
-    export default function Home({ navigation }){
+export default function Home(){
     return (
-        
-            
-        
+        <Container>
+            <View style={{flexDirection: 'row', marginTop: 20, marginBottom: 10}}>
+                <Ionicons name="menu-outline" size={24} color="black" />
+                <Ionicons name="ios-bicycle-outline" size={24} color="black" style={{marginHorizontal: 'auto'}}/>
+                <Ionicons name="search-outline" size={24} color="black" style={{marginHorizontal: 5}}/>
+                <Ionicons name="notifications-outline" size={24} color="black" />
+            </View>
 
- 
-        
-            <View style={{flex:1,alignItems:"center", justifyContent:"center"}}>
-            
-            <Text style={{color:"orange",fontSize:50,fontWeight:"800",paddingRight:20}}>Prilla's <Text style={{color:"#004D4D",fontSize:50,fontWeight:"800",paddingRight:40,}}>Shoppify</Text></Text>
-       
-           <TouchableOpacity style={{
-                backgroundColor:'#e3e3e3',
-                padding:10, 
-                borderRadius:10,
-                paddingHorizontal:40, 
-               marginTop:20}}>
-                <Text style={{fontSize:17,alignText:'center'}}>Because you're worth it</Text>
-             </TouchableOpacity>
-             <TouchableOpacity style={{
-             backgroundColor:"white",
-                padding:10, 
-               borderRadius:10,
-                paddingHorizontal:60, 
-               marginTop:20}}>
+            <Text style={{marginVertical: 10, fontSize: 18, fontWeight: 500, color: 'rgba(0,0,0, .4)'}}>The world's <Text style={{fontSize: 20, fontWeight: 700, color:'#f17827'}}>Best Bikes</Text></Text>
+            <Text style={{fontSize: 18, fontWeight: 700, color: 'rgba(0,0,0, .8)'}}>Categories</Text>
+            <ScrollView horizontal={true}>
+                <View style={{flexDirection: 'row', marginTop: 5}}>
+                    <Text style={[styles.categoryItem, styles.categoryItemActive]}>All</Text>
+                    <Text style={styles.categoryItem}>Roadster</Text>
+                    <Text style={styles.categoryItem}>Mountain</Text>
+                    <Text style={styles.categoryItem}>Urban</Text>
+                    <Text style={styles.categoryItem}>Casual</Text>
+                </View>
+            </ScrollView>
 
-                 <TouchableOpacity
-                 onPress={()=>{
-                     navigation.navigate("Login")
-                }}
-                 >
-           <Text style={{fontSize:17, fontWeight:"800", color:"black"}}>Get Started</Text>
+            <View style={{marginTop: 20, flexDirection: 'row', flexWrap: 'wrap', rowGap: 20, columnGap: 20, width: '92%', marginHorizontal: 'auto'}}> {/* width is hacky*/}
+            <Card name={"Pinarello"} price={"1700.00"} wishlist={true}/>
+            <Card name={"Brompton"} price={"2300.00"} wishlist={false} />
+            <Card name={"Schwinn"} price={"5500.00"} wishlist={false}/>
+            <Card name={"Norco"} price={"1000.00"} wishlist={false}/>
+            {/* <Card name={"Norco"} price={"1000.00"} wishlist={false}/> */}
+            {/* <Card name={"Norco"} price={"1000.00"} wishlist={false}/> */}
+            {/* <Card name={"Norco"} price={"1000.00"} wishlist={false}/> */}
+            {/* <Card name={"Norco"} price={"1000.00"} wishlist={false}/> */}
+            </View>
 
-             </TouchableOpacity>
-             </TouchableOpacity>
-
-                 </View>
-
-
-
-
+            {/* <Tab leftIcon={<Foundation name="home" size={24} color="#f17827" />} rightIcon={<SimpleLineIcons name="handbag" size={24} color="rgba(0,0,0,.6)" />}/> */}
+            <Tab homeActive={true}/>
+        </Container>
     )
-    }
+}
+
+
 
 const styles = StyleSheet.create({
-   img:{flex:1}
+    categoryItem: {
+        color: 'rgba(0,0,0, .5)',
+        backgroundColor: '#e3e3e3',
+        borderRadius: 5,
+        paddingVertical: 5,
+        paddingHorizontal: '1rem',
+        marginHorizontal: 7,
+        fontWeight: 500
+    },
+    categoryItemActive: {
+        color: '#f17827',
+    },
+})
 
-  
-  
-});
-
-
-
- 
