@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet, ScrollView} from 'react-native';
 import { Ionicons, AntDesign, Foundation } from '@expo/vector-icons';
-import Card from '../components/Card'
-import Tab from '../components/BottomTab'
-import Container from '../components/Container'
+import Card from '../components/Card';
+import Tab from '../components/BottomTab';
+import Container from '../components/Container';
 
 export default function Home(){
     return (
