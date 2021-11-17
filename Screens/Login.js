@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View,Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import {AntDesign} from '@expo/vector-icons'
+import {AntDesign} from '@expo/vector-icons';
 
 export default function Login({navigation}){
     return (
@@ -16,10 +16,7 @@ export default function Login({navigation}){
          source ={{
              uri:"https://media.gettyimages.com/photos/beautiful-woman-standing-in-front-of-blue-background-with-smart-phone-picture-id1268184706?k=20&m=1268184706&s=612x612&w=0&h=flglc0pirXRGe-YF-qwdAbylTePorGHX2rP0m9RgR08="
             }}
-            />
-     
-               
-                <Text style={{
+            />  <Text style={{
                     backgroundColor:'#e3e3e3',
                     padding:10, 
                     borderRadius:10,
@@ -44,21 +41,11 @@ export default function Login({navigation}){
                         
                  <AntDesign name="apple1" size={24} color="white"style={{ paddingRight:10}}/><Text style={{fontSize:17, color:"white",}}>Login in</Text>
                  <AntDesign name="google" size={24} color="white" style={{paddingLeft:10}}/>
-                  
-
-                  
-
-              
-                 </TouchableOpacity>
-                 
-                 
-                 <TouchableOpacity>
+                  </TouchableOpacity>
+                  <TouchableOpacity>
                  <Text style={{marginTop:10,fontWeight:"500",color:"grey"}}>Don't have an account?<Text style={{color:"orange",fontWeight:'bold'}}> Sign up</Text></Text>
                </TouchableOpacity>
-        </View>
-    
+        </View> 
     );
-    
-    
-} 
+    } 
 
