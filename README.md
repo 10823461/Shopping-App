@@ -1,4 +1,4 @@
-# Shopping-App
+# Screenshots
 ![1](https://user-images.githubusercontent.com/84512122/142347909-956d0308-e7ef-4457-b507-29f8ad4f3f38.png)
 ![2](https://user-images.githubusercontent.com/84512122/142347930-73c4a64d-0f63-47a1-9a95-5dbaef63d068.png)
 ![3](https://user-images.githubusercontent.com/84512122/142347960-48e541b1-76fc-438a-978b-3fbb17f074b1.png)
