@@ -7,6 +7,7 @@ import Login from './Screens/Login';
 import Welcome from './Screens/Welcome';
 import LoginDetails from './Screens/LoginDetails';
 import Home from './Screens/Home';
+import Cart from './Screens/Cart';
 import * as Font from 'expo-font';
 import {AppLoading} from 'expo';
 
@@ -22,10 +23,12 @@ export default function App() {
            
            
           screenOptions={{headerShown:true}}>
-              <Stack.Screen name="Home" component={Home} />
+        
             <Stack.Screen name="Welcome" component={Welcome } />
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="LoginDetails" component={LoginDetails } />
+            <Stack.Screen name="Cart" component={Cart } />
+            <Stack.Screen name="Home" component={Home} />
            
          
              

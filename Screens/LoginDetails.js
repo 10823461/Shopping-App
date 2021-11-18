@@ -74,8 +74,11 @@ export default function LoginDetails({ navigation }) {
                     borderRadius: 5,
                     textAlign:'center',
                    }}
-         >
-                    <Text style={{ justifyContent:'center',}}>
+                   onPress={()=>{
+                    navigation.navigate("Home")}}
+                    >
+                       
+            <Text style={{ justifyContent:'center',}}>
                  
                         Sign in
                     </Text>

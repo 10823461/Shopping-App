@@ -11,7 +11,9 @@ export default function Cart({navigation}){
     return (
         <Container>
             <View style={{marginTop: 30, marginBottom: 20, flexDirection: 'row'}}>
-                <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                <TouchableOpacity  onPress={()=>{
+                     navigation.navigate("Welcome")}}
+                     >
                 <Ionicons name="arrow-back" size={24} color="black" />
                 </TouchableOpacity>
                 <View style={{marginHorizontal: 'auto'}}>
@@ -23,7 +25,7 @@ export default function Cart({navigation}){
             <View>
                 <CartItem name={"Hp Pavelion"} type={"Hp"} price={"1700.00"}/>
                 <CartItem name={"Hp Envy"} type={"Hp"} price={"4200.69"}/>
-                <CartItem name={"Acer"} type={"Acer"} price={"666.00"}/>
+                <CartItem name={"Acer"} type={"Hp"} price={"666.00"}/>
             </View>
 
             <View style={{backgroundColor: 'rgba(0,0,0,.05)', borderRadius: 15, paddingVertical: 20, paddingHorizontal: 20, marginVertical: 10}}>
