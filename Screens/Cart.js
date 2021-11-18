@@ -21,9 +21,9 @@ export default function Cart({navigation}){
             </View>
 
             <View>
-                <CartItem name={"Pinerallo"} type={"Mountain"} price={"1700.00"}/>
-                <CartItem name={"Brompton"} type={"Road"} price={"4200.69"}/>
-                <CartItem name={"Norco"} type={"Urban"} price={"666.00"}/>
+                <CartItem name={"Hp Pavelion"} type={"Hp"} price={"1700.00"}/>
+                <CartItem name={"Hp Envy"} type={"Hp"} price={"4200.69"}/>
+                <CartItem name={"Acer"} type={"Acer"} price={"666.00"}/>
             </View>
 
             <View style={{backgroundColor: 'rgba(0,0,0,.05)', borderRadius: 15, paddingVertical: 20, paddingHorizontal: 20, marginVertical: 10}}>
