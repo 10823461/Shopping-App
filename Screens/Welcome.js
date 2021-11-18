@@ -4,12 +4,32 @@ import { StyleSheet, Text, View,Image, ImageBackground } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Login from './Login';
 import Laptop from '../assets/Laptop.png';
+import { Ionicons, FontAwesome, AntDesign, MaterialIcons, } from "@expo/vector-icons";
 
 
 //const Welcome = props => {
     export default function Welcome({ navigation }){
     return (
+        <View style ={{backgroundColor: "white", flex: 1,}}>
+        <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          backgroundColor: "#ff8400",
+          alignItems: "center",
+          paddingTop: 15,
+          paddingBottom: 10,
+          paddingHorizontal: 15,
+        }}
+      >
+        <Ionicons name="arrow-back-outline" size={24} color="white" />
+        <Text style={{color: "white", fontWeight: "bold", fontSize: 15}}>WELCOME</Text>
+        <View style={{ flexDirection: "row", justifyContent: "space-between"}}>
+        </View>
+        </View>
         <ImageBackground
+        
+        
         style = {styles.img}
         source = {Laptop}
         //source ={{uri: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60=" }
@@ -54,6 +74,7 @@ import Laptop from '../assets/Laptop.png';
 
 
     </ImageBackground>
+    </View>
     )
     }
 

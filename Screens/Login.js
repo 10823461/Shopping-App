@@ -1,10 +1,27 @@
 import React from 'react';
 import { StyleSheet, Text, View,Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import {AntDesign} from '@expo/vector-icons';
+import { Ionicons, FontAwesome, AntDesign, MaterialIcons, } from "@expo/vector-icons";
 
 export default function Login({navigation}){
     return (
+        <View style ={{backgroundColor: "white", flex: 1,}}>
+        <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          backgroundColor: "grey",
+          alignItems: "center",
+          paddingTop: 15,
+          paddingBottom: 10,
+          paddingHorizontal: 15,
+        }}
+      >
+        <Ionicons name="arrow-back-outline" size={24} color="white" />
+        <Text style={{color: "white", fontWeight: "bold", fontSize: 15}}>GET STARTED</Text>
+        <View style={{ flexDirection: "row", justifyContent: "space-between"}}>
+        </View>
+        </View>
         <View style={{flex:1,backgroundColor:'#004D4D',alignItems:"center", justifyContent:"center"}}>
         <Image
         style={{
@@ -45,6 +62,7 @@ export default function Login({navigation}){
                   <TouchableOpacity>
                  <Text style={{marginTop:10,fontWeight:"500",color:"grey"}}>Don't have an account?<Text style={{color:"orange",fontWeight:'bold'}}> Sign up</Text></Text>
                </TouchableOpacity>
+        </View>
         </View> 
     );
     } 
